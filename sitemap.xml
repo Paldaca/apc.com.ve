@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://apc.com.ve/</loc>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://apc.com.ve/assets/identity-photo.webp</image:loc>
+      <image:title>APC Petroleum CA - Holding Energético Internacional</image:title>
+      <image:caption>Instalaciones y equipo de APC Petroleum CA</image:caption>
+    </image:image>
   </url>
 </urlset>
