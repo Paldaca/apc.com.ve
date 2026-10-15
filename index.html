@@ -115,9 +115,16 @@
   .nav-toggle-label{display:none;flex-direction:column;justify-content:center;gap:5px;width:26px;height:20px;cursor:pointer;flex:none}
   .nav-toggle-label span{display:block;height:2px;width:100%;background:#0d1b30;border-radius:2px}
 
-  .companies-grid{display:grid;grid-template-columns:repeat(8,1fr);grid-auto-rows:1fr;gap:28px}
-  .companies-grid > *{grid-column:span 2;height:100%;box-sizing:border-box}
+  .companies-grid{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));grid-auto-rows:1fr;gap:28px;width:100%}
+  .companies-grid > *{grid-column:span 2;height:100%;min-width:0;box-sizing:border-box}
   .companies-grid > *:nth-child(5){grid-column:2 / span 2}
+
+  @media (max-width:1024px){
+    .companies-grid{grid-template-columns:repeat(4,minmax(0,1fr)) !important;grid-auto-rows:1fr !important;gap:24px !important}
+    .companies-grid > *{grid-column:span 2 !important;padding:28px 24px !important}
+    .companies-grid > *:nth-child(5){grid-column:auto / span 2 !important}
+    .companies-grid > *:nth-child(7){grid-column:2 / span 2 !important}
+  }
 
   @media (max-width:960px){
     .site-header{padding-left:24px !important;padding-right:24px !important}
@@ -142,10 +149,6 @@
 
     .identity-grid{grid-template-columns:1fr !important}
     .mvv-grid{grid-template-columns:1fr !important}
-    .companies-grid{grid-template-columns:repeat(4,1fr) !important;grid-auto-rows:1fr !important}
-    .companies-grid > *{grid-column:span 2 !important}
-    .companies-grid > *:nth-child(5){grid-column:auto / span 2 !important}
-    .companies-grid > *:nth-child(7){grid-column:2 / span 2 !important}
     .services-grid{grid-template-columns:repeat(2,1fr) !important}
     .presence-grid{grid-template-columns:1fr !important}
     .stats-grid{grid-template-columns:repeat(2,1fr) !important}
@@ -156,8 +159,10 @@
 
   @media (max-width:600px){
     .site-header{padding-left:16px !important;padding-right:16px !important}
-    .companies-grid{grid-template-columns:1fr !important;grid-auto-rows:auto !important}
-    .companies-grid > *{grid-column:auto !important}
+    .companies-grid{display:flex !important;flex-direction:column !important;gap:20px !important;width:100% !important}
+    .companies-grid > *{width:100% !important;max-width:100% !important;height:auto !important;grid-column:auto !important;padding:24px 20px !important}
+    .companies-grid > *:nth-child(5){grid-column:auto !important}
+    .companies-grid > *:nth-child(7){grid-column:auto !important}
     .services-grid{grid-template-columns:1fr !important}
     .hero-title{font-size:30px !important}
     .section-title{font-size:26px !important}
@@ -283,7 +288,7 @@
       <h2 class="section-title" style="font-size:38px;color:#0d1b30;font-weight:600;margin-bottom:18px">{{ t.portfolioTitlePre }} <em>{{ t.portfolioTitleEm }}</em></h2>
       <p style="font-size:16px;line-height:1.7;color:#5b6472">{{ t.portfolioBody }}</p>
     </div>
-    <div class="companies-grid" style="display:grid;grid-template-columns:repeat(8,1fr);grid-auto-rows:1fr;gap:28px">
+    <div class="companies-grid">
       <sc-for list="{{ companies }}" as="co" hint-placeholder-count="7">
         <div style="background:#fff;border:1px solid #e6e2da;border-radius:2px;padding:32px;display:flex;flex-direction:column;gap:16px;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;cursor:default" style-hover="transform:translateY(-6px) !important;box-shadow:0 16px 32px rgba(13,27,48,0.14) !important;border-color:#b68a3d !important">
           <div style="display:flex;align-items:center;justify-content:space-between">
@@ -506,7 +511,7 @@ const DATA = {
       { title: 'Global vision, Venezuelan roots.', desc: 'Born in Venezuela, structured for the world.' }
     ],
     stats: [
-      { value: '6', label: 'Specialized Companies' },
+      { value: '7', label: 'Specialized Companies' },
       { value: '3', label: 'Countries of Operation' },
       { value: '25+', label: 'Years of Track Record' },
       { value: '50,000+', label: 'Engineering Hours' }
