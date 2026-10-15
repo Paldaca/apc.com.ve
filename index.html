@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>APC Petroleum CA | Holding Energético Internacional</title>
-<meta name="description" content="APC Petroleum CA es un holding energético internacional con seis empresas especializadas en ingeniería de detalle, inspección técnica API, medición fiscal de hidrocarburos y confiabilidad industrial en Venezuela, Portugal y Estados Unidos.">
+<meta name="description" content="APC Petroleum CA es un holding energético internacional con siete empresas especializadas en ingeniería de detalle, inspección técnica API, medición fiscal de hidrocarburos y confiabilidad industrial en Venezuela, Portugal y Estados Unidos.">
 <meta name="keywords" content="APC Petroleum, holding petrolero, ingeniería de detalle, inspección técnica API, medición fiscal, hidrocarburos, confiabilidad industrial, petróleo y gas Venezuela, Paldaca, SSAPI, Orinoco Energy, ReliaTech Global, Kinetic Scale Projectos, TESCO">
 <meta name="author" content="APC Petroleum CA">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
@@ -20,7 +20,7 @@
 <meta property="og:locale" content="es_VE">
 <meta property="og:url" content="https://apc.com.ve/">
 <meta property="og:title" content="APC Petroleum CA | Holding Energético Internacional">
-<meta property="og:description" content="Seis empresas especializadas en ingeniería, inspección técnica API, medición fiscal y confiabilidad industrial, operando en sinergia en Venezuela, Portugal y Estados Unidos.">
+<meta property="og:description" content="Siete empresas especializadas en ingeniería, inspección técnica API, medición fiscal y confiabilidad industrial, operando en sinergia en Venezuela, Portugal y Estados Unidos.">
 <meta property="og:image" content="https://apc.com.ve/assets/identity-photo.webp">
 <meta property="og:image:secure_url" content="https://apc.com.ve/assets/identity-photo.webp">
 <meta property="og:image:type" content="image/webp">
@@ -30,7 +30,7 @@
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="APC Petroleum CA | Holding Energético Internacional">
-<meta name="twitter:description" content="Seis empresas especializadas en ingeniería, inspección técnica API, medición fiscal y confiabilidad industrial, operando en sinergia en Venezuela, Portugal y Estados Unidos.">
+<meta name="twitter:description" content="Siete empresas especializadas en ingeniería, inspección técnica API, medición fiscal y confiabilidad industrial, operando en sinergia en Venezuela, Portugal y Estados Unidos.">
 <meta name="twitter:image" content="https://apc.com.ve/assets/identity-photo.webp">
 <meta name="twitter:image:alt" content="Instalaciones y operaciones de APC Petroleum CA">
 
@@ -45,7 +45,7 @@
       "@id": "https://apc.com.ve/#website",
       "url": "https://apc.com.ve/",
       "name": "APC Petroleum CA",
-      "description": "Holding energético con seis empresas especializadas en ingeniería, inspección técnica API, medición fiscal y confiabilidad industrial.",
+      "description": "Holding energético con siete empresas especializadas en ingeniería, inspección técnica API, medición fiscal y confiabilidad industrial.",
       "inLanguage": "es"
     },
     {
@@ -58,7 +58,7 @@
         "url": "https://apc.com.ve/assets/apc-logo.webp"
       },
       "image": "https://apc.com.ve/assets/identity-photo.webp",
-      "description": "Holding energético internacional con seis empresas especializadas en ingeniería de detalle, inspección técnica API, medición fiscal y confiabilidad industrial para los sectores de petróleo, gas e industria.",
+      "description": "Holding energético internacional con siete empresas especializadas en ingeniería de detalle, inspección técnica API, medición fiscal y confiabilidad industrial para los sectores de petróleo, gas e industria.",
       "email": "info@apc.com.ve",
       "telephone": "+584242247245",
       "areaServed": [
@@ -77,11 +77,12 @@
       ],
       "subOrganization": [
         { "@type": "Organization", "name": "Consorcio Paldaca C.A.", "url": "https://paldaca.com" },
-        { "@type": "Organization", "name": "Servicios y Soluciones API (SSAPI)", "url": "https://ssapico.com" },
+        { "@type": "Organization", "name": "Ingeniería COFER C.A.", "url": "https://cofer.com.ve" },
         { "@type": "Organization", "name": "Orinoco Energy C.A.", "url": "https://orinoconrg.com" },
+        { "@type": "Organization", "name": "Servicios y Soluciones API (SSAPI)", "url": "https://ssapico.com" },
         { "@type": "Organization", "name": "ReliaTech Global", "url": "https://reliatechglobal.com" },
-        { "@type": "Organization", "name": "Kinetic Scale Projectos LDA (KSP)", "url": "https://ksprojectos.pt" },
-        { "@type": "Organization", "name": "Trade Energy & Services Co. (TESCO)", "url": "https://tesco.us.com" }
+        { "@type": "Organization", "name": "Trade Energy & Services Co. (TESCO)", "url": "https://tesco.us.com" },
+        { "@type": "Organization", "name": "Kinetic Scale Projectos LDA (KSP)", "url": "https://ksprojectos.pt" }
       ]
     }
   ]
@@ -114,6 +115,10 @@
   .nav-toggle-label{display:none;flex-direction:column;justify-content:center;gap:5px;width:26px;height:20px;cursor:pointer;flex:none}
   .nav-toggle-label span{display:block;height:2px;width:100%;background:#0d1b30;border-radius:2px}
 
+  .companies-grid{display:grid;grid-template-columns:repeat(8,1fr);grid-auto-rows:1fr;gap:28px}
+  .companies-grid > *{grid-column:span 2;height:100%;box-sizing:border-box}
+  .companies-grid > *:nth-child(5){grid-column:2 / span 2}
+
   @media (max-width:960px){
     .site-header{padding-left:24px !important;padding-right:24px !important}
     .nav-toggle-label{display:flex}
@@ -137,7 +142,10 @@
 
     .identity-grid{grid-template-columns:1fr !important}
     .mvv-grid{grid-template-columns:1fr !important}
-    .companies-grid{grid-template-columns:repeat(2,1fr) !important}
+    .companies-grid{grid-template-columns:repeat(4,1fr) !important;grid-auto-rows:1fr !important}
+    .companies-grid > *{grid-column:span 2 !important}
+    .companies-grid > *:nth-child(5){grid-column:auto / span 2 !important}
+    .companies-grid > *:nth-child(7){grid-column:2 / span 2 !important}
     .services-grid{grid-template-columns:repeat(2,1fr) !important}
     .presence-grid{grid-template-columns:1fr !important}
     .stats-grid{grid-template-columns:repeat(2,1fr) !important}
@@ -148,7 +156,8 @@
 
   @media (max-width:600px){
     .site-header{padding-left:16px !important;padding-right:16px !important}
-    .companies-grid{grid-template-columns:1fr !important}
+    .companies-grid{grid-template-columns:1fr !important;grid-auto-rows:auto !important}
+    .companies-grid > *{grid-column:auto !important}
     .services-grid{grid-template-columns:1fr !important}
     .hero-title{font-size:30px !important}
     .section-title{font-size:26px !important}
@@ -274,8 +283,8 @@
       <h2 class="section-title" style="font-size:38px;color:#0d1b30;font-weight:600;margin-bottom:18px">{{ t.portfolioTitlePre }} <em>{{ t.portfolioTitleEm }}</em></h2>
       <p style="font-size:16px;line-height:1.7;color:#5b6472">{{ t.portfolioBody }}</p>
     </div>
-    <div class="companies-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:28px">
-      <sc-for list="{{ companies }}" as="co" hint-placeholder-count="6">
+    <div class="companies-grid" style="display:grid;grid-template-columns:repeat(8,1fr);grid-auto-rows:1fr;gap:28px">
+      <sc-for list="{{ companies }}" as="co" hint-placeholder-count="7">
         <div style="background:#fff;border:1px solid #e6e2da;border-radius:2px;padding:32px;display:flex;flex-direction:column;gap:16px;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;cursor:default" style-hover="transform:translateY(-6px) !important;box-shadow:0 16px 32px rgba(13,27,48,0.14) !important;border-color:#b68a3d !important">
           <div style="display:flex;align-items:center;justify-content:space-between">
             <span style="font-size:12px;letter-spacing:.5px;color:#8a94a6;font-weight:600">{{ co.country }} · {{ t.foundedLabel }} {{ co.year }}</span>
@@ -362,7 +371,7 @@
   <div style="max-width:1120px;margin:0 auto 56px">
     <div style="text-align:center;font-size:12.5px;letter-spacing:2px;color:#8a94a6;font-weight:600;margin-bottom:20px">{{ t.portalsLabel }}</div>
     <div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center">
-      <sc-for list="{{ portals }}" as="pr" hint-placeholder-count="7">
+      <sc-for list="{{ portals }}" as="pr" hint-placeholder-count="8">
         <a href="{{ pr.url }}" target="_blank" rel="noopener noreferrer" style="padding:10px 20px;border:1px solid rgba(255,255,255,0.18);border-radius:2px;font-size:13.5px;color:#c3cad6;font-weight:500" style-hover="border-color:#d9b465 !important;color:#d9b465 !important">{{ pr.name }}</a>
       </sc-for>
     </div>
@@ -385,21 +394,21 @@ const TRANSLATIONS = {
     navContacto: 'Contacto', navBrochure: 'Descargar Folleto Corporativo',
     heroEyebrow: 'HOLDING ENERGÉTICO INTERNACIONAL',
     heroTitlePre: 'Energía,', heroTitleEm: 'Ingeniería', heroTitlePost: 'y Confiabilidad',
-    heroBody: 'APC Petroleum CA es un ecosistema empresarial integrado por seis entidades especializadas que operan en sinergia en los sectores de petróleo, gas, ingeniería industrial e inspección técnica — con proyección hacia los mercados europeo y norteamericano.',
+    heroBody: 'APC Petroleum CA es un ecosistema empresarial integrado por siete entidades especializadas que operan en sinergia en los sectores de petróleo, gas, ingeniería industrial e inspección técnica — con proyección hacia los mercados europeo y norteamericano.',
     heroCta1: 'Nuestras Empresas', heroCta2: 'Iniciar Conversación',
     identityEyebrow: 'NUESTRA IDENTIDAD',
     identityTitlePre: 'Un grupo', identityTitleEm: 'diferente', identityTitlePost: 'por diseño',
     identityBody1: 'APC Petroleum CA es un ecosistema donde cada entidad tiene una identidad propia, un mercado objetivo definido y una especialidad irrepetible. Lejos de competir entre sí, cada empresa aporta una pieza esencial de la cadena de valor que ninguna podría ofrecer sola.',
     identityBody2: 'Este modelo, análogo a los grandes conglomerados internacionales de servicios industriales, permite ofrecer al cliente una propuesta integral que abarca desde la ingeniería de detalle hasta la certificación técnica, la medición fiscal y la gestión de activos con Industria 4.0.',
     mvvEyebrow: 'MISIÓN, VISIÓN Y VALORES', mvvTitlePre: 'Lo que nos', mvvTitleEm: 'orienta',
-    missionTitle: 'Misión', missionBody: 'Integrar y coordinar las capacidades de ingeniería, procura, construcción, inspección técnica, medición fiscal, confiabilidad industrial, comercialización y financiamiento internacional de las seis empresas del Grupo, ofreciendo una cadena de valor completa y verificable bajo un mismo holding, con estándares internacionales.',
+    missionTitle: 'Misión', missionBody: 'Integrar y coordinar las capacidades de ingeniería, procura, construcción, inspección técnica, medición fiscal, confiabilidad industrial, comercialización y financiamiento internacional de las siete empresas del Grupo, ofreciendo una cadena de valor completa y verificable bajo un mismo holding, con estándares internacionales.',
     visionTitle: 'Visión', visionBody: 'Consolidarnos como el ecosistema industrial energético integrado de referencia en la región, reconocidos por nuestra capacidad técnica combinada, nuestro acceso a financiamiento europeo y mercados norteamericanos, operando siempre bajo pleno cumplimiento normativo.',
     valuesTitle: 'Valores',
-    portfolioEyebrow: 'PORTAFOLIO CORPORATIVO', portfolioTitlePre: 'Seis empresas,', portfolioTitleEm: 'una visión',
+    portfolioEyebrow: 'PORTAFOLIO CORPORATIVO', portfolioTitlePre: 'Siete empresas,', portfolioTitleEm: 'una visión',
     portfolioBody: 'Cada entidad domina un campo específico y mantiene un mercado objetivo propio, integradas en sinergia bajo un mismo holding.',
     foundedLabel: 'Fundada',
     servicesEyebrow: 'SERVICIOS INTEGRADOS', servicesTitlePre: 'Diseñamos,', servicesTitleEm: 'construimos,', servicesTitlePost: 'certificamos y optimizamos',
-    servicesBody: 'Nuestras seis empresas cubren la cadena completa de servicios industriales — desde la fase de ingeniería hasta la gestión digital de activos.',
+    servicesBody: 'Nuestras siete empresas cubren la cadena completa de servicios industriales — desde la fase de ingeniería hasta la gestión digital de activos.',
     presenceEyebrow: 'PRESENCIA GLOBAL', presenceTitlePre: 'Tres países,', presenceTitleEm: 'una estrategia',
     presenceBody: 'La arquitectura corporativa del grupo opera en múltiples jurisdicciones, separando los flujos operativos venezolanos de la infraestructura financiera internacional.',
     contactEyebrow: 'CONTACTO', contactTitlePre: 'Hablemos de', contactTitleEm: 'su proyecto',
@@ -413,21 +422,21 @@ const TRANSLATIONS = {
     navContacto: 'Contact', navBrochure: 'Download Corporate Brochure',
     heroEyebrow: 'INTERNATIONAL ENERGY HOLDING',
     heroTitlePre: 'Energy,', heroTitleEm: 'Engineering', heroTitlePost: 'and Reliability',
-    heroBody: 'APC Petroleum CA is a business ecosystem made up of six specialized entities operating in synergy across the oil, gas, industrial engineering, and technical inspection sectors — with a growing footprint in European and North American markets',
+    heroBody: 'APC Petroleum CA is a business ecosystem made up of seven specialized entities operating in synergy across the oil, gas, industrial engineering, and technical inspection sectors — with a growing footprint in European and North American markets',
     heroCta1: 'Our Companies', heroCta2: 'Start a Conversation',
     identityEyebrow: 'OUR IDENTITY',
     identityTitlePre: 'A group', identityTitleEm: 'different', identityTitlePost: 'by design',
     identityBody1: 'APC Petroleum CA it is an ecosystem where each entity has its own identity, a defined target market, and a specialty no other can replicate. Far from competing with each other, each company contributes an essential piece of the value chain that none could offer alone.',
     identityBody2: 'This model, similar to major international industrial services conglomerates, lets us offer clients a comprehensive proposal spanning detailed engineering, technical certification, fiscal measurement, and Industry 4.0 asset management.',
     mvvEyebrow: 'MISSION, VISION AND VALUES', mvvTitlePre: 'What guides', mvvTitleEm: 'us',
-    missionTitle: 'Mission', missionBody: "Integrate and coordinate the engineering, procurement, construction, technical inspection, fiscal measurement, industrial reliability, commercialization, and international financing capabilities of the Group's six companies, offering a complete, verifiable value chain under one holding, to international standards.",
+    missionTitle: 'Mission', missionBody: "Integrate and coordinate the engineering, procurement, construction, technical inspection, fiscal measurement, industrial reliability, commercialization, and international financing capabilities of the Group's seven companies, offering a complete, verifiable value chain under one holding, to international standards.",
     visionTitle: 'Vision', visionBody: 'To establish ourselves as the region\'s reference integrated industrial energy ecosystem, recognized for our combined technical capacity and our access to European financing and North American markets, always operating under full regulatory compliance.',
     valuesTitle: 'Values',
-    portfolioEyebrow: 'CORPORATE PORTFOLIO', portfolioTitlePre: 'Six companies,', portfolioTitleEm: 'one vision',
+    portfolioEyebrow: 'CORPORATE PORTFOLIO', portfolioTitlePre: 'Seven companies,', portfolioTitleEm: 'one vision',
     portfolioBody: 'Each entity masters a specific field and maintains its own target market, integrated in synergy under one holding.',
     foundedLabel: 'Founded',
     servicesEyebrow: 'INTEGRATED SERVICES', servicesTitlePre: 'We design,', servicesTitleEm: 'we build,', servicesTitlePost: 'certify and optimize',
-    servicesBody: 'Our six companies cover the full chain of industrial services — from the engineering phase through digital asset management.',
+    servicesBody: 'Our seven companies cover the full chain of industrial services — from the engineering phase through digital asset management.',
     presenceEyebrow: 'GLOBAL PRESENCE', presenceTitlePre: 'Three countries,', presenceTitleEm: 'one strategy',
     presenceBody: "The group's corporate architecture operates across multiple jurisdictions, separating Venezuelan operational flows from international financial infrastructure.",
     contactEyebrow: 'CONTACT', contactTitlePre: "Let's talk about", contactTitleEm: 'your project',
@@ -441,7 +450,7 @@ const TRANSLATIONS = {
 const DATA = {
   es: {
     values: [
-      'Sinergia sobre competencia interna: seis empresas coordinadas para sumar valor al cliente, no competir entre sí.',
+      'Sinergia sobre competencia interna: siete empresas coordinadas para sumar valor al cliente, no competir entre sí.',
       'Especialización técnica: cada entidad domina un campo — IPC, inspección API, medición fiscal, confiabilidad 4.0, financiamiento UE, comercio internacional.',
       'Cumplimiento normativo: operación bajo cumplimiento OFAC explícito en TESCO y normas API en SSAPI.',
       'Excelencia operativa verificable: miles de horas de ingeniería ejecutadas y certificaciones API 510 y 653.',
@@ -453,18 +462,19 @@ const DATA = {
       { title: 'Visión global, raíces venezolanas.', desc: 'Nacidos en Venezuela, estructurados para el mundo.' }
     ],
     stats: [
-      { value: '6', label: 'Empresas Especializadas' },
+      { value: '7', label: 'Empresas Especializadas' },
       { value: '3', label: 'Países de Operación' },
       { value: '25+', label: 'Años de Trayectoria' },
       { value: '50.000+', label: 'Horas de Ingeniería' }
     ],
     companies: [
       { country: 'Venezuela', year: '2000', logo: 'assets/logo-paldaca.webp', name: 'Consorcio Paldaca C.A.', specialty: 'Ingeniería · Procura · Construcción', desc: 'Empresa ancla del grupo. Ejecuta proyectos IPC integrales en los sectores petrolero, petroquímico, energético e industrial. Hub logístico con oficinas, taller, almacén y flota de equipos.', tags: ['IPC', 'Ingeniería de Detalle', 'Obras Civiles', 'Mantenimiento'], url: 'https://paldaca.com', urlLabel: 'paldaca.com' },
-      { country: 'Venezuela', year: '2023', logo: 'assets/logo-ssapi.webp', name: 'Servicios y Soluciones API (SSAPI)', specialty: 'Inspección Técnica · API 510 / 570 / 653', desc: '50.000+ horas de ingeniería ejecutadas. Especializada en inspección bajo normas API internacionales, pruebas de pozos y análisis predictivo de equipos estáticos y rotativos.', tags: ['API 653', 'API 510', 'API 570', 'Pruebas de Pozos'], url: 'https://ssapico.com', urlLabel: 'ssapico.com' },
+      { country: 'Venezuela', year: '2005', logo: 'assets/logo-cofer.webp', name: 'Ingeniería COFER C.A.', specialty: 'Obras Civiles · Obras Eléctricas', desc: 'Empresa del grupo dedicada a obras civiles y eléctricas. Proyectos estructurales e instalaciones de servicios eléctricos, mecánicos y gas.', tags: ['Obras Civiles', 'Obras Eléctricas', 'Estructuras Metálicas', 'Instalaciones'], url: 'https://cofer.com.ve', urlLabel: 'cofer.com.ve' },
       { country: 'Venezuela', year: '2018', logo: 'assets/logo-orinoco.webp', name: 'Orinoco Energy C.A.', specialty: 'Medición Fiscal de Hidrocarburos', desc: 'Diseña y ejecuta sistemas de medición fiscal para hidrocarburos líquidos y gaseosos. Provee también personal técnico especializado como servicio outsourced.', tags: ['Medición Fiscal', 'SCADA', 'Instrumentación', 'Asistencia Técnica'], url: 'https://orinoconrg.com', urlLabel: 'orinoconrg.com' },
+      { country: 'Venezuela', year: '2023', logo: 'assets/logo-ssapi.webp', name: 'Servicios y Soluciones API (SSAPI)', specialty: 'Inspección Técnica · API 510 / 570 / 653', desc: '50.000+ horas de ingeniería ejecutadas. Especializada en inspección bajo normas API internacionales, pruebas de pozos y análisis predictivo de equipos estáticos y rotativos.', tags: ['API 653', 'API 510', 'API 570', 'Pruebas de Pozos'], url: 'https://ssapico.com', urlLabel: 'ssapico.com' },
       { country: 'Venezuela', year: '2026', logo: 'assets/logo-reliatech.webp', name: 'ReliaTech Global', specialty: 'Confiabilidad Industrial · ISO 55000', desc: 'La empresa tecnológica del grupo. Implementa RCM, análisis FMEA, plataformas IIoT y software propietario para la gestión predictiva de activos industriales en tiempo real.', tags: ['RCM', 'ISO 55000', 'IIoT', 'CMMS/EAM'], url: 'https://reliatechglobal.com', urlLabel: 'reliatechglobal.com' },
-      { country: 'Portugal (UE)', year: '2022', logo: 'assets/logo-ksp.webp', name: 'Kinetic Scale Projectos LDA (KSP)', specialty: 'Representación Europea · Financiamiento UE', desc: 'Entidad domiciliada en la Unión Europea (Mealhada, Portugal). Puerta de acceso al sistema financiero europeo. Canal de importación de tecnología y materiales de calidad europea.', tags: ['Financiamiento UE', 'Importación', 'Representación', 'No-OFAC'], url: 'https://ksprojectos.pt', urlLabel: 'ksprojectos.pt' },
-      { country: 'Estados Unidos', year: '2018', logo: 'assets/logo-tesco.webp', name: 'Trade Energy & Services Co. (TESCO)', specialty: 'Procura Internacional · Comercio Energético', desc: 'Entidad con base legal en EE.UU. para importación, exportación y procura de productos industriales y energéticos en el mercado norteamericano. Opera bajo estricto cumplimiento OFAC.', tags: ['Procura USA', "Comercio Int'l", 'OFAC Compliance'], url: 'https://tesco.us.com', urlLabel: 'tesco.us.com' }
+      { country: 'Estados Unidos', year: '2018', logo: 'assets/logo-tesco.webp', name: 'Trade Energy & Services Co. (TESCO)', specialty: 'Procura Internacional · Comercio Energético', desc: 'Entidad con base legal en EE.UU. para importación, exportación y procura de productos industriales y energéticos en el mercado norteamericano. Opera bajo estricto cumplimiento OFAC.', tags: ['Procura USA', "Comercio Int'l", 'OFAC Compliance'], url: 'https://tesco.us.com', urlLabel: 'tesco.us.com' },
+      { country: 'Portugal (UE)', year: '2022', logo: 'assets/logo-ksp.webp', name: 'Kinetic Scale Projectos LDA (KSP)', specialty: 'Representación Europea · Financiamiento UE', desc: 'Entidad domiciliada en la Unión Europea (Mealhada, Portugal). Puerta de acceso al sistema financiero europeo. Canal de importación de tecnología y materiales de calidad europea.', tags: ['Financiamiento UE', 'Importación', 'Representación', 'No-OFAC'], url: 'https://ksprojectos.pt', urlLabel: 'ksprojectos.pt' }
     ],
     services: [
       { num: '01', title: 'Ingeniería de Detalle Multidisciplinaria', desc: 'Procesos, civil, tuberías, instrumentación y electricidad. Proyectos llave en mano en sectores petrolero, petroquímico y energético.' },
@@ -484,7 +494,7 @@ const DATA = {
   },
   en: {
     values: [
-      'Synergy over internal competition: six companies coordinated to add value for the client, not compete with each other.',
+      'Synergy over internal competition: seven companies coordinated to add value for the client, not compete with each other.',
       'Technical specialization: each entity masters a field — EPC, API inspection, fiscal measurement, 4.0 reliability, EU financing, international trade.',
       'Regulatory compliance: operation under explicit OFAC compliance at TESCO and API standards at SSAPI.',
       'Verifiable operational excellence: thousands of engineering hours executed and API 510 and 653 certifications.',
@@ -503,11 +513,12 @@ const DATA = {
     ],
     companies: [
       { country: 'Venezuela', year: '2000', logo: 'assets/logo-paldaca.webp', name: 'Consorcio Paldaca C.A.', specialty: 'Engineering · Procurement · Construction', desc: 'The group\'s anchor company. Executes full EPC projects in the oil, petrochemical, energy, and industrial sectors. Logistics hub with offices, workshop, warehouse, and equipment fleet.', tags: ['EPC', 'Detail Engineering', 'Civil Works', 'Maintenance'], url: 'https://paldaca.com', urlLabel: 'paldaca.com' },
-      { country: 'Venezuela', year: '2023', logo: 'assets/logo-ssapi.webp', name: 'Servicios y Soluciones API (SSAPI)', specialty: 'Technical Inspection · API 510 / 570 / 653', desc: '50,000+ engineering hours executed. Specialized in inspection under international API standards, well testing, and predictive analysis of static and rotating equipment.', tags: ['API 653', 'API 510', 'API 570', 'Well Testing'], url: 'https://ssapico.com', urlLabel: 'ssapico.com' },
+      { country: 'Venezuela', year: '2005', logo: 'assets/logo-cofer.webp', name: 'Ingeniería COFER C.A.', specialty: 'Civil Works · Electrical Works', desc: 'A company within the group specializing in civil and electrical works. Structural projects and the installation of electrical, mechanical, and gas systems.', tags: ['Civil Works', 'Electrical Works', 'Steel Structures', 'Installations'], url: 'https://cofer.com.ve', urlLabel: 'cofer.com.ve' },
       { country: 'Venezuela', year: '2018', logo: 'assets/logo-orinoco.webp', name: 'Orinoco Energy C.A.', specialty: 'Hydrocarbon Fiscal Measurement', desc: 'Designs and executes fiscal measurement systems for liquid and gaseous hydrocarbons. Also provides specialized technical staff as an outsourced service.', tags: ['Fiscal Measurement', 'SCADA', 'Instrumentation', 'Technical Support'], url: 'https://orinoconrg.com', urlLabel: 'orinoconrg.com' },
+      { country: 'Venezuela', year: '2023', logo: 'assets/logo-ssapi.webp', name: 'Servicios y Soluciones API (SSAPI)', specialty: 'Technical Inspection · API 510 / 570 / 653', desc: '50,000+ engineering hours executed. Specialized in inspection under international API standards, well testing, and predictive analysis of static and rotating equipment.', tags: ['API 653', 'API 510', 'API 570', 'Well Testing'], url: 'https://ssapico.com', urlLabel: 'ssapico.com' },
       { country: 'Venezuela', year: '2026', logo: 'assets/logo-reliatech.webp', name: 'ReliaTech Global', specialty: 'Industrial Reliability · ISO 55000', desc: "The group's technology company. Implements RCM, FMEA analysis, IIoT platforms and proprietary software for real-time predictive management of industrial assets.", tags: ['RCM', 'ISO 55000', 'IIoT', 'CMMS/EAM'], url: 'https://reliatechglobal.com', urlLabel: 'reliatechglobal.com' },
-      { country: 'Portugal (EU)', year: '2022', logo: 'assets/logo-ksp.webp', name: 'Kinetic Scale Projectos LDA (KSP)', specialty: 'European Representation · EU Financing', desc: 'Entity domiciled in the European Union (Mealhada, Portugal). Gateway to the European financial system. Import channel for European-quality technology and materials.', tags: ['EU Financing', 'Import', 'Representation', 'Non-OFAC'], url: 'https://ksprojectos.pt', urlLabel: 'ksprojectos.pt' },
-      { country: 'United States', year: '2018', logo: 'assets/logo-tesco.webp', name: 'Trade Energy & Services Co. (TESCO)', specialty: 'International Procurement · Energy Trade', desc: 'Entity legally based in the U.S. for import, export, and procurement of industrial and energy products in the North American market. Operates under strict OFAC compliance.', tags: ['USA Procurement', "Int'l Trade", 'OFAC Compliance'], url: 'https://tesco.us.com', urlLabel: 'tesco.us.com' }
+      { country: 'United States', year: '2018', logo: 'assets/logo-tesco.webp', name: 'Trade Energy & Services Co. (TESCO)', specialty: 'International Procurement · Energy Trade', desc: 'Entity legally based in the U.S. for import, export, and procurement of industrial and energy products in the North American market. Operates under strict OFAC compliance.', tags: ['USA Procurement', "Int'l Trade", 'OFAC Compliance'], url: 'https://tesco.us.com', urlLabel: 'tesco.us.com' },
+      { country: 'Portugal (EU)', year: '2022', logo: 'assets/logo-ksp.webp', name: 'Kinetic Scale Projectos LDA (KSP)', specialty: 'European Representation · EU Financing', desc: 'Entity domiciled in the European Union (Mealhada, Portugal). Gateway to the European financial system. Import channel for European-quality technology and materials.', tags: ['EU Financing', 'Import', 'Representation', 'Non-OFAC'], url: 'https://ksprojectos.pt', urlLabel: 'ksprojectos.pt' }
     ],
     services: [
       { num: '01', title: 'Multidisciplinary Detail Engineering', desc: 'Process, civil, piping, instrumentation and electrical. Turnkey projects in the oil, petrochemical, and energy sectors.' },
@@ -588,11 +599,12 @@ class Component extends DCLogic {
       portals: [
         { name: 'APC Petroleum CA · apc.com.ve', url: 'https://apc.com.ve' },
         { name: 'Paldaca C.A. · paldaca.com', url: 'https://paldaca.com' },
-        { name: 'SSAPI · ssapico.com', url: 'https://ssapico.com' },
+        { name: 'Ingeniería COFER · cofer.com.ve', url: 'https://cofer.com.ve' },
         { name: 'Orinoco Energy · orinoconrg.com', url: 'https://orinoconrg.com' },
+        { name: 'SSAPI · ssapico.com', url: 'https://ssapico.com' },
         { name: 'ReliaTech Global · reliatechglobal.com', url: 'https://reliatechglobal.com' },
-        { name: 'Kinetic Scale (KSP) · ksprojectos.pt', url: 'https://ksprojectos.pt' },
-        { name: 'TESCO · tesco.us.com', url: 'https://tesco.us.com' }
+        { name: 'TESCO · tesco.us.com', url: 'https://tesco.us.com' },
+        { name: 'Kinetic Scale (KSP) · ksprojectos.pt', url: 'https://ksprojectos.pt' }
       ]
     };
   }
